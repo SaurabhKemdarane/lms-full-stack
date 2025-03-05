@@ -1,5 +1,6 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,10 +8,11 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-start px-8 md:px-0 justify-center gap-10 md:gap-32 py-10 border-b border-white/30">
 
         <div className="flex flex-col md:items-start items-center w-full">
-          <img src={assets.logo_dark} alt="logo" />
-          <p className="mt-6 text-center md:text-left text-sm text-white/80">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
-          </p>
+          <img src={logo} alt="logo" />
+          <p className="mt-2 text-gray-400 text-left text-sm">
+              Study Nest is an innovative e-learning platform providing high-quality courses, 
+              resources, and tools to help learners excel in their studies.
+            </p>
         </div>
 
         <div className="flex flex-col md:items-start items-center w-full">
@@ -36,7 +38,7 @@ const Footer = () => {
 
       </div>
       <p className="py-4 text-center text-xs md:text-sm text-white/60">
-        Copyright 2024 © GreatStack. All Right Reserved.
+        Copyright 2024 © StudyNest. All Right Reserved.
       </p>
     </footer>
   );
